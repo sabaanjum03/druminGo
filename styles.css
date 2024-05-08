@@ -1,0 +1,167 @@
+body {
+  text-align: center;
+  background-color: #283149;
+}
+
+h2 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+/* Drum buttons */
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+/* Drum button images */
+.w {
+  background-image: url("tom1.png");
+}
+
+.a {
+  background-image: url("tom2.png");
+}
+
+.s {
+  background-image: url("tom3.png");
+}
+
+.d {
+  background-image: url("tom4.png");
+}
+
+.j {
+  background-image: url("snare.png");
+}
+
+.k {
+  background-image: url("crash.png");
+}
+
+.l {
+  background-image: url("kick.png");
+}
+
+/* Drum button states */
+.pressed {
+  box-shadow: 0 3px 4px 0 #a7b09f;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+/* Set container */
+.set {
+  margin: 10% auto;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+
+  .drum {
+    font-size: 3rem;
+    width: 100px;
+    height: 100px;
+  }
+
+  .set {
+    margin: 20% auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .drum {
+    font-size: 2rem;
+    width: 80px;
+    height: 80px;
+  }
+
+  .set {
+    margin: 30% auto;
+  }
+}
+
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  
+  width: 100%;
+  
+  z-index: 1000;
+  
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, 
+  #5F374B, 
+  #8C6A5D,#EEE4B1);
+
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  text-align: left;
+  
+    padding-top: 60px; /* Adjust as needed */
+    padding-bottom: 60px; /* Adjust as needed */
+  
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 100px;
+}
+.head{
+background-color: white;
+}
+
+
+
